@@ -1,5 +1,5 @@
 {
-  "name": "dektrium/yii2-rbac",
+  "name": "dsanchez98/yii2-rbac",
   "description": "RBAC management module for Yii2",
   "keywords": ["yii2", "yii2-rbac", "rbac management", "dektrium", "rbac gui", "yii rbac", "rbac module"],
   "type": "yii2-extension",
@@ -10,9 +10,9 @@
   },
   "authors": [
     {
-      "name": "Dmitry Erofeev",
-      "email": "dmeroff@gmail.com",
-      "homepage": "http://dmeroff.ru"
+      "name": "Daniel Sanchez",
+      "email": "daniel.sanchez@ticmakers.com",
+      "homepage": "http://www.ticmakers.com"
     }
   ],
   "minimum-stability": "dev",
@@ -22,10 +22,10 @@
   },
   "autoload": {
     "psr-4": {
-      "dektrium\\rbac\\": ""
+      "dsanchez98\\rbac\\": ""
     }
   },
   "extra": {
-    "bootstrap": "dektrium\\rbac\\Bootstrap"
+    "bootstrap": "dsanchez98\\rbac\\Bootstrap"
   }
 }
