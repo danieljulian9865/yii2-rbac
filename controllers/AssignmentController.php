@@ -3,15 +3,15 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\controllers;
+namespace dsanchez98\rbac\controllers;
 
-use dektrium\rbac\models\Assignment;
+use dsanchez98\rbac\models\Assignment;
 use Yii;
 use yii\web\Controller;
 
@@ -35,7 +35,7 @@ class AssignmentController extends Controller
         if ($model->load(\Yii::$app->request->post()) && $model->updateAssignments()) {
         }
 
-        return \dektrium\rbac\widgets\Assignments::widget([
+        return \dsanchez98\rbac\widgets\Assignments::widget([
             'model' => $model,
         ]);
         /*$model = Yii::createObject([

@@ -3,17 +3,17 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\models;
+namespace dsanchez98\rbac\models;
 
 use yii\base\Model;
 use yii\rbac\Item;
-use dektrium\rbac\validators\RbacValidator;
+use dsanchez98\rbac\validators\RbacValidator;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
@@ -35,7 +35,7 @@ abstract class AuthItem extends Model
     /** @var \yii\rbac\Role|\yii\rbac\Permission */
     public $item;
 
-    /** @var \dektrium\rbac\components\DbManager */
+    /** @var \dsanchez98\rbac\components\DbManager */
     protected $manager;
 
     /** @inheritdoc */

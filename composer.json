@@ -1,18 +1,18 @@
 {
   "name": "dsanchez98/yii2-rbac",
   "description": "RBAC management module for Yii2",
-  "keywords": ["yii2", "yii2-rbac", "rbac management", "dektrium", "rbac gui", "yii rbac", "rbac module"],
+  "keywords": ["yii2", "yii2-rbac", "rbac management", "dsanchez98", "rbac gui", "yii rbac", "rbac module"],
   "type": "yii2-extension",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/dektrium/yii2-rbac/issues?state=open",
-    "source": "https://github.com/dektrium/yii2-rbac"
+    "issues": "https://github.com/dsanchez98/yii2-rbac/issues?state=open",
+    "source": "https://github.com/dsanchez98/yii2-rbac"
   },
   "authors": [
     {
-      "name": "Daniel Sanchez",
-      "email": "daniel.sanchez@ticmakers.com",
-      "homepage": "http://www.ticmakers.com"
+      "name": "Dmitry Erofeev",
+      "email": "dmeroff@gmail.com",
+      "homepage": "http://dmeroff.ru"
     }
   ],
   "minimum-stability": "dev",

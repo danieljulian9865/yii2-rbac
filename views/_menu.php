@@ -3,7 +3,7 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -25,7 +25,7 @@ use yii\bootstrap\Nav;
         [
             'label'   => Yii::t('rbac', 'Users'),
             'url'     => ['/user/admin/index'],
-            'visible' => isset(Yii::$app->extensions['dektrium/yii2-user']),
+            'visible' => isset(Yii::$app->extensions['dsanchez98/yii2-user']),
         ],
         [
             'label' => Yii::t('rbac', 'Roles'),
@@ -41,7 +41,7 @@ use yii\bootstrap\Nav;
                 [
                     'label'   => Yii::t('rbac', 'New user'),
                     'url'     => ['/user/admin/create'],
-                    'visible' => isset(Yii::$app->extensions['dektrium/yii2-user']),
+                    'visible' => isset(Yii::$app->extensions['dsanchez98/yii2-user']),
                 ],
                 [
                     'label' => Yii::t('rbac', 'New role'),

@@ -3,7 +3,7 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -12,7 +12,7 @@
 /**
  * @var $dataProvider array
  * @var $this         yii\web\View
- * @var $filterModel  dektrium\rbac\models\Search
+ * @var $filterModel  dsanchez98\rbac\models\Search
  */
 
 use yii\grid\ActionColumn;
@@ -24,7 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 
-<?php $this->beginContent('@dektrium/rbac/views/layout.php') ?>
+<?php $this->beginContent('@dsanchez98/rbac/views/layout.php') ?>
 
 <?= GridView::widget([
     'dataProvider' => $dataProvider,

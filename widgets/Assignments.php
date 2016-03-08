@@ -3,16 +3,16 @@
 /* 
  * This file is part of the Dektrium project
  * 
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  * 
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\widgets;
+namespace dsanchez98\rbac\widgets;
 
-use dektrium\rbac\components\DbManager;
-use dektrium\rbac\models\Assignment;
+use dsanchez98\rbac\components\DbManager;
+use dsanchez98\rbac\models\Assignment;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\base\Widget;

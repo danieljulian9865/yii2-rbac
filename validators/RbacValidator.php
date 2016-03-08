@@ -3,13 +3,13 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\validators;
+namespace dsanchez98\rbac\validators;
 
 use yii\validators\Validator;
 
@@ -18,7 +18,7 @@ use yii\validators\Validator;
  */
 class RbacValidator extends Validator
 {
-    /** @var \dektrium\rbac\components\DbManager */
+    /** @var \dsanchez98\rbac\components\DbManager */
     protected $manager;
     
     /** @inheritdoc */

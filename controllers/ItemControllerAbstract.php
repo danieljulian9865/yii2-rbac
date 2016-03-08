@@ -3,13 +3,13 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) Dektrium project <http://github.com/dsanchez98>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac\controllers;
+namespace dsanchez98\rbac\controllers;
 
 use yii\base\InvalidConfigException;
 use yii\base\Model;
@@ -17,7 +17,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\Response;
 use yii\widgets\ActiveForm;
-use dektrium\rbac\models\Search;
+use dsanchez98\rbac\models\Search;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
@@ -26,7 +26,7 @@ abstract class ItemControllerAbstract extends Controller
 {
     /**
      * @param  string $name
-     * @return \dektrium\rbac\models\Role|\dektrium\rbac\models\Permission
+     * @return \dsanchez98\rbac\models\Role|\dsanchez98\rbac\models\Permission
      */
     abstract protected function getItem($name);
 
@@ -74,7 +74,7 @@ abstract class ItemControllerAbstract extends Controller
      */
     public function actionCreate()
     {
-        /** @var \dektrium\rbac\models\Role|\dektrium\rbac\models\Permission $model */
+        /** @var \dsanchez98\rbac\models\Role|\dsanchez98\rbac\models\Permission $model */
         $model = \Yii::createObject([
             'class'    => $this->modelClass,
             'scenario' => 'create',
@@ -100,7 +100,7 @@ abstract class ItemControllerAbstract extends Controller
      */
     public function actionUpdate($name)
     {
-        /** @var \dektrium\rbac\models\Role|\dektrium\rbac\models\Permission $model */
+        /** @var \dsanchez98\rbac\models\Role|\dsanchez98\rbac\models\Permission $model */
         $item  = $this->getItem($name);
         $model = \Yii::createObject([
             'class'    => $this->modelClass,

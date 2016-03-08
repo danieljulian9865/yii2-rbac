@@ -3,17 +3,17 @@
 /*
  * This file is part of the Dektrium project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) Dektrium project <http://github.com/dsanchez98/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\rbac;
+namespace dsanchez98\rbac;
 
-use dektrium\rbac\components\DbManager;
-use dektrium\rbac\components\ManagerInterface;
-use dektrium\user\Module as UserModule;
+use dsanchez98\rbac\components\DbManager;
+use dsanchez98\rbac\components\ManagerInterface;
+use dsanchez98\user\Module as UserModule;
 use yii\base\Application;
 use yii\base\BootstrapInterface;
 
@@ -42,7 +42,7 @@ class Bootstrap implements BootstrapInterface
                 ]);
             }
 
-            // if dektrium/user extension is installed, copy admin list from there
+            // if dsanchez98/user extension is installed, copy admin list from there
             if ($this->checkUserModuleInstalled($app)) {
                 $app->getModule('rbac')->admins = $app->getModule('user')->admins;
             }   
@@ -50,7 +50,7 @@ class Bootstrap implements BootstrapInterface
     }
     
     /**
-     * Verifies that dektrium/yii2-rbac is installed and configured.
+     * Verifies that dsanchez98/yii2-rbac is installed and configured.
      * @param  Application $app
      * @return bool
      */
@@ -60,7 +60,7 @@ class Bootstrap implements BootstrapInterface
     }
     
     /**
-     * Verifies that dektrium/yii2-user is installed and configured.
+     * Verifies that dsanchez98/yii2-user is installed and configured.
      * @param  Application $app
      * @return bool
      */
